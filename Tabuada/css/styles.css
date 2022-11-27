@@ -7,12 +7,19 @@
 
 body {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     min-height: 100vh;
     background: #7d7e7d;
     background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%);
     color: #fff;
     background-image: url("../image/01.png");
+
+
+}
+
+img {
+    width: 350px;
+    height: 150px;
 }
 
 h2 {
@@ -34,6 +41,8 @@ h2 {
     border-radius: 1rem;
     color: #333;
     border: 5px solid  rgb(127, 255, 249);
+
+    
 }
 
 .form-control {
@@ -75,6 +84,37 @@ h2 {
     cursor: pointer;
     font-weight: bold;
 }
+    @-webkit-keyframes glowing {
+        0% { background-color: #35b084; -webkit-box-shadow: 0 0 3px #35b084; }
+        50% { background-color: #e03030; -webkit-box-shadow: 0 0 3px #8BC34A; }
+        100% { background-color: #35b084; -webkit-box-shadow: 0 0 3px #35b084; }
+      }
+      
+      @-moz-keyframes glowing {
+        0% { background-color: #35b084; -moz-box-shadow: 0 0 3px #35b084; }
+        50% { background-color: #e03030; -moz-box-shadow: 0 0 3px #8BC34A; }
+        100% { background-color: #35b084; -moz-box-shadow: 0 0 3px #35b084; }
+      }
+      
+      @-o-keyframes glowing {
+        0% { background-color: #35b084; box-shadow: 0 0 3px #35b084; }
+        50% { background-color: #e03030; box-shadow: 0 0 3px #8BC34A; }
+        100% { background-color: #35b084; box-shadow: 0 0 3px #35b084; }
+      }
+      
+      @keyframes glowing {
+        0% { background-color: #35b084; box-shadow: 0 0 3px #35b084; }
+        50% { background-color: #e03030; box-shadow: 0 0 3px #8BC34A; }
+        100% { background-color: #35b084; box-shadow: 0 0 3px #35b084; }
+      }
+      
+      #multiplication-form input[type="submit"] {
+        -webkit-animation: glowing 1500ms infinite;
+        -moz-animation: glowing 1500ms infinite;
+        -o-animation: glowing 1500ms infinite;
+        animation: glowing 1500ms infinite;
+    }
+
 
 #subtracao-operations,
 #divisao-operations,
@@ -129,3 +169,57 @@ border-bottom: 1px solid #ccc;
     color: aqua;
 }
 
+
+@-webkit-keyframes dfdff {
+    0% { color: #35b084;  }
+    50% { color: #e03030;  }
+    100% { color: #35b084;  }
+  }
+  
+  @-moz-keyframes dfdff {
+    0% { color: #35b084; }
+    50% { color: #e03030;  }
+    100% { color: #35b084;  }
+  }
+  
+  @-o-keyframes dfdff {
+    0% { color: #35b084; }
+    50% { color: #e03030;  }
+    100% { color: #35b084; }
+  }
+  
+  @keyframes dfdff {
+    0% { color: #35b084; }
+    50% { color: #e03030;  }
+    100% { color: #35b084;  }
+  }
+  
+  .fa-solid {
+    -webkit-animation: dfdff 1500ms infinite;
+    -moz-animation: dfdff 1500ms infinite;
+    -o-animation: dfdff 1500ms infinite;
+    animation: dfdff 1500ms infinite;
+}
+
+footer {
+    padding: 1rem;
+}
+
+
+footer h3 {
+    font-size: 15px;
+}
+
+.foo {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    margin: 2px;
+}
+
+.foo a {
+    padding: 0.3rem;
+    font-size: 25px;
+    text-align: none;
+    color: #ccc;
+}

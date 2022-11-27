@@ -1,4 +1,4 @@
- // Seleção de elemntos
+ // Seleção de elementos
 const multiplicationForm = document.querySelector("#multiplication-form");
 const numberInput =        document.querySelector("#number");
 const multiplicationInput = document.querySelector("#multiplicator");
@@ -29,6 +29,7 @@ const createTable = (number, multiplicatorNumber) => {
     divisaoTable.innerHTML = "";
 
     // For para os itens de multiplicação
+    // Começar a iterar por 1, ate ser igual o menor que variavel
     for(i = 1; i <= multiplicatorNumber; i++) {
         const result = number * i;
 
@@ -36,6 +37,7 @@ const createTable = (number, multiplicatorNumber) => {
             `<div class="row">
                 <div class="operation">${number} x ${i} = </div>
                 <div class="result">${result}</div>
+  
             </div>`;
 
         const parser = new DOMParser()

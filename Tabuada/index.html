@@ -13,20 +13,22 @@
     <script src="js/scripts.js" defer></script>
 </head>
 <body>
-    <h2>Digite o número e confirme para gerar uma tabuada</h2>
+    <!-- <h2>Digite o número e confirme para gerar uma tabuada</h2> -->
     <form  id="multiplication-form">
+  
+        <img src="image/01.svg" alt="">
         <div class="form-control">
             <label for="number">Tabuada de:</label>
-            <input type="number" name="number" id="number" placeholder="3">
+            <input type="number" name="number" id="number" placeholder="Escolha um Nº">
         </div>
         <div class="form-control">
-            <label for="multiplicator">Calcular por:</label>
-            <input type="number" name="multiplicator" id="multiplicator" value="4">
+            <label for="multiplicator">Qtas vezes:</label>
+            <input type="number" name="multiplicator" id="multiplicator" placeholder="Iterar por?">
         </div>
         
         <input type="submit" value="Calcular">
     </form>
-    <div id="multiplication-table">
+   <div id="multiplication-table">
         <div class="multiplicacao">
             <h2 id="multiplication-title"><i class="fa-solid fa-xmark"></i> do número: <span></span></h2>
             <div id="multiplication-operations">
@@ -38,6 +40,7 @@
             <h2 id="soma-title"><i class="fa-solid fa-plus"></i> do número: <span></span></h2>
             <div id="soma-operations">
                 <p>Informe um número para calcular uma tabuada...</p>
+             
             </div>
         </div>
 
@@ -49,11 +52,26 @@
         </div>
 
         <div class="divisao">
-            <h2 id="divisao-title"><i class="fa-solid fa-percent"></i> do números <span></span></h2>
+            <h2 id="divisao-title"><i class="fa-solid fa-percent"></i> do número: <span></span></h2>
             <div id="divisao-operations">
                 <p>Informe um número para calcular uma tabuada...</p>
             </div>
         </div>
     </div>
+    <footer>
+        <h3>Criado por Gleisson - 2022</h3>
+        <div class="foo">
+
+            <a href="https://www.linkedin.com/in/gleissonsantos/">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+
+            <a href="https://github.com/gleisson-santos">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+    </footer>
 </body>
 </html>
