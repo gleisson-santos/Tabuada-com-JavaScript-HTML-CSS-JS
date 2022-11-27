@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada JS</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- defer - script carrega apos o HTML -->
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <h2>Digite o número e confirme para gerar uma tabuada</h2>
+    <form  id="multiplication-form">
+        <div class="form-control">
+            <label for="number">Tabuada de:</label>
+            <input type="number" name="number" id="number" placeholder="3">
+        </div>
+        <div class="form-control">
+            <label for="multiplicator">Calcular por:</label>
+            <input type="number" name="multiplicator" id="multiplicator" value="4">
+        </div>
+        
+        <input type="submit" value="Calcular">
+    </form>
+    <div id="multiplication-table">
+        <div class="multiplicacao">
+            <h2 id="multiplication-title"><i class="fa-solid fa-xmark"></i> do número: <span></span></h2>
+            <div id="multiplication-operations">
+                <p>Informe um número para calcular uma tabuada...</p>
+            </div>
+         </div>  
+
+        <div class="soma">
+            <h2 id="soma-title"><i class="fa-solid fa-plus"></i> do número: <span></span></h2>
+            <div id="soma-operations">
+                <p>Informe um número para calcular uma tabuada...</p>
+            </div>
+        </div>
+
+        <div class="subtracao">
+            <h2 id="subtracao-title"><i class="fa-solid fa-minus"></i> do número: <span></span></h2>
+            <div id="subtracao-operations">
+                <p>Informe um número para calcular uma tabuada...</p>
+            </div>
+        </div>
+
+        <div class="divisao">
+            <h2 id="divisao-title"><i class="fa-solid fa-percent"></i> do números <span></span></h2>
+            <div id="divisao-operations">
+                <p>Informe um número para calcular uma tabuada...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
