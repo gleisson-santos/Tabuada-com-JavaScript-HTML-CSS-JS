@@ -1,2 +1,1 @@
-Procrelease: ./release-task.sh
-web: ./bin/olaheroku
+web: bundle exec rails server -p $PORT
